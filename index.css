@@ -29,7 +29,8 @@ body, html {
 }
 
 #home > .w3-display-middle > a > img {
-    max-width:70%;
+    min-width: 70%;
+    max-width: 70%;
 }
 
 
@@ -56,7 +57,7 @@ body, html {
 }
 
 footer > a > img {
-   width: 10%;
+   max-width: 20%;
 }
 
 footer > .sns {
