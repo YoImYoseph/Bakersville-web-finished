@@ -12,17 +12,20 @@
 <!-- Nav Bar -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
+    <div class="w3-col">
       <a href="#" class="w3-button w3-block w3-black">HOME</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col">
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
-    <div class="w3-col s3">
+    <div class="w3-col">
       <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
     </div>
-    <div class="w3-col s3">
-      <a href="#CONTACT" class="w3-button w3-block w3-black">CONTACT</a>
+    <div class="w3-col">
+      <a href="#gallery" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+    <div class="w3-col">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
     </div>
   </div>
 </div>
@@ -53,7 +56,7 @@
       <p><i>"With great power comes great responsibility"</i></p>
       <p>Spiderman, From the movie "Spiderman": Peter Parker</p>
     </div>
-    <img src="img/about-img.jpg" class="w3-margin-top">
+    <img src="img/about-img.jpg" class="w3-margin-top" alt="picture of casher side">
     <p><strong>Opening hours:</strong> <br> 8am to 10pm for Mon, Tue, Wed, Thu, and Sun. <br> 8am to 11am for Fri and Sat (Somedays might change)</p>
     <p><strong>Address:</strong> <br> 8357 W Golf Rd, Niles, IL 60714</p>
   </div>
@@ -66,24 +69,83 @@
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">OUR MENU</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Coffee');" id="myLink">
+        <div class="w3-col s4 tablink">Coffee</div> 
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Tea');">
+        <div class="w3-col s4 tablink">Tea</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');">
+        <div class="w3-col s4 tablink">Eat</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+        <div class="w3-col s4 tablink">Drink</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Cakes');">
-        <div class="w3-col s6 tablink">Cakes</div>
+        <div class="w3-col s4 tablink">Cakes</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Bingsu');">
-        <div class="w3-col s6 tablink">Bingsu</div>
+        <div class="w3-col s4 tablink">Bingsu</div>
       </a>
+
     </div>
+
+    <div id="Coffee" class="w3-container menu w3-padding-48 w3-card">
+
+      <h5 class="h5-inline">B.C.B.C Coffee / B.C.B.C Decaf Coffee (S/M/L)</h5>
+      <span class="w3-tag">* S: 12oz / M: 16oz / L: 20oz <br>* Iced Avaliable!</span>
+      <p class="w3-text-grey">Lightly roasted coffee that's soft, mellow and flavorful. Easy-drinking on its own and delicious with milk, sugar or flavored with vanilla, caramel or hazelnut.</p><br>
+
+      <h5>Americano (S/M/L)</h5>
+      <p class="w3-text-grey">Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.</p><br>
+        
+      <h5>Latte (S/M/L)</h5>
+      <p class="w3-text-grey">Made with steamed, frothy milk, blended with our rich, freshly ground and brewed espresso. Our Latte has a layer of foam and is the perfect balance of creamy and smooth to get you goin'.</p><br>
+        
+      <h5>Cappuccino (S/M/L)</h5>
+      <p class="w3-text-grey">Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.</p><br>
+
+      <h5>Caramel Macchiato (S/M/L)</h5>
+      <p class="w3-text-grey">Did someone say layers on layers of hand-crafted deliciousness? Made with creamy milk and topped with sweet caramel swirl, our Caramel Macchiato is just what you're looking for.</p><br>
+      
+      <h5>Mocha (S/M/L)</h5>
+      <p class="w3-text-grey">Cozy up with one of our creamy, craveable hot chocolates. Available in a variety of flavors sure to warm your soul.</p><br>
+
+      <h5>Cafe Au Lait (S/M/L)</h5>
+      <span class="w3-text-grey">3.25(S) / 3.55(M) / 3.85(L)</span>
+    </div> 
+
+    <div id="Tea" class="w3-container menu w3-padding-48 w3-card">
+      <h5 class="h5-inline">Korean Traditional Tea (16oz) <span class="w3-tag w3-red w3-round">Hot!</span></h5>
+      <span class="w3-tag">* <span class="fas fa-grin-hearts"> = Popular!</span> <br>* <span class="fas fa-laugh-wink"></span> = New!</span>
+      <p class="w3-text-grey">
+        Ginger <i class="fas fa-grin-hearts"></i> <br>
+        Citron<br>
+        Adlai<br>
+        Ginseng<br>
+        5-Flavored<br>
+        Date <i class="fas fa-grin-hearts"></i> <br>
+        Lemon<br>
+        Plum<br>
+        Quince<br>
+        Grapefruit <i class="fas fa-laugh-wink"></i> </p><br>
+    <!-- <span class="w3-tag w3-red w3-round">Hot!</span> -->
+      <h5>Loose Tea (16oz)</h5>
+      <p class="w3-text-grey">
+        Green Tea <br>
+        Jasmine Green Tea <br>
+        Chamomile <br>
+        Peppermint <br>
+        Emerald Spring <br>
+        English Breakfast <br>
+        Earl Grey 
+      </p> 
+    </div> 
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
       <h5>Bread Basket</h5>
       <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50 </p> <br>
-      <!-- <span class="w3-tag w3-green w3-round">Hot!</span> -->
+  
       <h5>Honey Almond Granola with Fruits</h5>
       <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
     
@@ -149,7 +211,49 @@
     </div> 
 
     
-    <img src="img/sam-img1.jpg">
+
+
+    
+    <img src="img/sam-img1.jpg" alt="sample img">
+  </div>
+</div>
+
+<!-- Tabbed Image Gallery -->
+<div class="w3-container" id="gallery">
+  <div class="w3-content">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BAKERSVILLE GALLERY</span></h5>
+
+    <div class="row">
+      <div class="column">
+        <img src="img/about-img.jpg" alt="Nature" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/logo.png" alt="Snow" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/logo2.png" alt="Mountains" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="img/map.png" alt="Lights" onclick="myFunction(this);">
+      </div>
+        <div class="column">
+        <img src="img/nav-back.jpg" alt="Lights" onclick="myFunction(this);">
+      </div>
+        <div class="column">
+        <img src="img/sam-img1.jpg" alt="Lights" onclick="myFunction(this);">
+      </div>
+        <div class="column">
+        <img src="img/about-img.jpg" alt="Lights" onclick="myFunction(this);">
+      </div>
+    </div>
+    
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"><i class="far fa-window-close"></i></span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
+
   </div>
 </div>
 
@@ -158,13 +262,13 @@
   <div class="w3-content">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h5>
     <p>Find us at some address at some place.</p>
-    <a href="https://goo.gl/maps/gKvqwBX9DnZGERcXA" target="_blank"><img src="img/map.png" class="w3-image"></a>
+    <a href="https://goo.gl/maps/gKvqwBX9DnZGERcXA" target="_blank"><img src="img/map.png" class="w3-image" alt="map img of bakersville"></a>
     <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
     <p><strong>Reserve</strong> foods, drinks, or cakes. <strong>Ask</strong> us (847-966-0404) or send us an email in <strong>English</strong>:</p>
     <form action="mailto:blsck1024@gmail.com" target="_blank" method="POST">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Enter your phone number" required name="Phone number"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime" placeholder="Pick-up date and time" required name="date"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Pick-up date and time" required name="date"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
       <p><button class="w3-button w3-black" type="submit">SEND EMAIL</button></p>
     </form>
@@ -179,7 +283,17 @@
   <a href="#home"><img src="img/logo2.png" alt="logo"></a>
   <address>8357 W Golf Rd, Niles, IL 60714</address>
   <p>Tel: 847 966 0404</p>
-  <a class="sns" target="_blank" href="https://www.instagram.com/p/BtHRFcEF133/?utm_source=ig_web_button_share_sheet"> <i class="fab fa-instagram-square"></i></a> &nbsp &nbsp <a target="_blank" class="sns" href="https://www.facebook.com/bakersvillenilesbakery/"><i class="fab fa-facebook-square"></i></a> &nbsp &nbsp <a target="_blank" class="sns" href="mailto:blsck1024@gmail.com"><i class="fas fa-envelope-square"></i></a>
+  <a class="sns" target="_blank" href="https://www.instagram.com/bakersville__niles/"> <i class="fab fa-instagram-square"></i></a> &nbsp; &nbsp; <a target="_blank" class="sns" href="https://www.facebook.com/bakersvillenilesbakery/"><i class="fab fa-facebook-square"></i></a> &nbsp; &nbsp; <a target="_blank" class="sns" href="mailto:blsck1024@gmail.com"><i class="fas fa-envelope-square"></i></a>
+  <p>
+    <a href="http://validator.kldp.org/check?uri=referer"
+      onclick="this.href=this.href.replace(/referer$/,encodeURIComponent(document.URL))"><img
+      src="//validator.kldp.org/w3cimgs/validate/html5-blue.png" alt="Valid HTML 5" height="15" width="80"></a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+        </a>
+    </p>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 

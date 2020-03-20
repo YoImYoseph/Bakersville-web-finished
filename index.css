@@ -10,6 +10,11 @@ body, html {
     min-height: 75%;
   }
 
+.w3-top > .w3-row > .w3-col {
+  width: 20%;
+}
+
+
 
 .menu {
     display: none;
@@ -22,6 +27,20 @@ body, html {
 #menu > .w3-content > img {
     width:100%;max-width:1000px;margin-top:32px;
  }
+
+ #menu > .w3-content > .w3-container > .w3-tag {
+   float: right;
+   text-align: left;
+   font-size: .8em;
+ }
+
+ #menu > .w3-content > .w3-container > .h5-inline {
+   display: inline;
+ }
+
+ #menu > .w3-content > .w3-container > .h5-inline {
+  display: inline;
+}
 
 
 #home > .w3-display-bottomleft > span {
@@ -44,7 +63,7 @@ body, html {
 }
 
 
-#contact > {
+#contact {
     padding-bottom:32px;
 }
 
@@ -57,13 +76,68 @@ body, html {
 }
 
 footer > a > img {
-   max-width: 20%;
+  max-width: 15%;
 }
 
 footer > .sns {
     font-size: 2.5em;
 }
 
+
+
+
+#gallery > .w3-content > .row > .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+#gallery > .w3-content > .row > .column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+  width:100%;
+}
+
+#gallery > .w3-content > .row > .column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+#gallery > .w3-content > .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+#gallery > .w3-content > .container {
+  position: relative;
+  display: none;
+}
+
+
+/* Expanding image text */
+#gallery > .w3-content > .container > #imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 25px;
+  background-color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* border: 10px solid black; */
+}
+
+/* Closable button inside the expanded image */
+#gallery > .w3-content > .container > .closebtn {
+  position: absolute;
+  right: 15px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
 /* .w3-center > a {
   width:10px;
 } */
